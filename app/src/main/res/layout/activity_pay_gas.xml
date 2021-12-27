@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_96sdp"
+                    android:background="#516395">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:text="Hi, Sushant"
+                        android:id="@+id/tv_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ava"
+                        android:layout_marginStart="@dimen/_130sdp"/>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_44sdp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:id="@+id/cv_profile"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Gas Bill"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_36sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_search"
+                            android:background="@drawable/bg_mobile"
+                            android:padding="@dimen/_12sdp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:src="@drawable/ic_search"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:src="@drawable/ic_divider"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                android:id="@+id/et_select_city"
+                                android:background="@drawable/bg_mobile"
+                                android:hint="Gas Provider"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_search"
+                            android:id="@+id/relativeLayout1"
+                            android:layout_marginTop="@dimen/_26sdp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gail_gas"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="Gail Gas"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:drawableTop="@drawable/gail_gas" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_adani_gas"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:text="Adani Gas"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/adani_gas" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_megha_gas"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:drawablePadding="10dp"
+                                android:text="Megha Gas"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_59sdp"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/megha_gas" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout1"
+                            android:id="@+id/relativeLayout2"
+                            android:layout_marginTop="@dimen/_16sdp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_cugl"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="CUGL"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:drawableTop="@drawable/cugl" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gail_india"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:text="Gail Ltd."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/gail_india" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gujrat_gas"
+                                android:padding="@dimen/_4sdp"
+                                android:drawablePadding="10dp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:text="Gujrat Gas"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/gujrat_gas" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout2"
+                            android:id="@+id/relativeLayout3"
+                            android:layout_marginTop="@dimen/_16sdp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gail"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="Gail Gas"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:drawableTop="@drawable/gails" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gp_gas"
+                                android:padding="@dimen/_3sdp"
+                                android:text="GP Gas"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/gp_gas" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_irm_gas"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:padding="@dimen/_4sdp"
+                                android:drawablePadding="10dp"
+                                android:text="IRM Gas"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/irm_gas" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout3"
+                            android:id="@+id/relativeLayout4"
+                            android:layout_marginTop="@dimen/_16sdp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_cugl_gas"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="CUGL"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:drawableTop="@drawable/cu_gl" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_think"
+                                android:padding="@dimen/_6sdp"
+                                android:text="Think Gas"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/cu_gl" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_unique"
+                                android:padding="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:drawablePadding="10dp"
+                                android:text="Unique Gas"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/cu_gl" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_below="@+id/relativeLayout4"
+                            android:id="@+id/relativeLayout5"
+                            android:layout_marginTop="@dimen/_16sdp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/imageViewLogout"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="IGL Gas"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:drawableTop="@drawable/igl_gas" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_gail_ltd"
+                                android:padding="@dimen/_6sdp"
+                                android:text="Gail Ltd."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/gail_ltd" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/imgBtn_icici"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:drawablePadding="10dp"
+                                android:text="Gujrat Gas"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bg_gas_corner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/gujrat_gas" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

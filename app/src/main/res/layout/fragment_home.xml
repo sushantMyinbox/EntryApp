@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_66sdp"
+                    android:background="#516395">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:text="Hi,"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:text="Sushant"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_110sdp"
+                        android:src="@drawable/ava"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_140sdp"
+                        android:src="@drawable/ic_notify"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_140sdp"
+                        android:src="@drawable/ic_menu_icon"
+                        android:visibility="gone" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_94sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_social"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Personal"
+                        android:textColor="#3A3D3F"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_36sdp"
+                            android:layout_marginEnd="@dimen/_6sdp">
+
+                            <Button
+                                android:id="@+id/btn_add_home"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_home_icon"
+                                android:drawablePadding="10dp"
+                                android:text="Add Home"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_add_family"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_home"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_people"
+                                android:drawablePadding="10dp"
+                                android:text="Add Family"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_add_guest"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_family"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_guest_icon"
+                                android:text="Add Visitor"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_add_vehicle"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_guest"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_vehicle_icon"
+                                android:drawablePadding="10dp"
+                                android:text="Add Vehicle"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_resident"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_vehicle"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_residents"
+                                android:drawablePadding="10dp"
+                                android:text="Resident List"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/btn_help"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_resident"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_help"
+                                android:text="Add Help"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_below="@id/cv_social"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Notify Gate"
+                        android:textColor="#3A3D3F"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_36sdp"
+                            android:layout_marginEnd="@dimen/_6sdp">
+
+                            <Button
+                                android:id="@+id/btn_entry"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_friend"
+                                android:drawablePadding="10dp"
+                                android:text="Add Entries"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_security"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_entry"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_security_icon"
+                                android:drawablePadding="10dp"
+                                android:text="Security Alert"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+
+                            <Button
+                                android:id="@+id/btn_message"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_toEndOf="@id/btn_security"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_message"
+                                android:text="Message to Guard"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_gatePass"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_message"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_guest_icon"
+                                android:drawablePadding="10dp"
+                                android:text="Issue GatePass"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_approval"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_gatePass"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_approval_icon"
+                                android:drawablePadding="10dp"
+                                android:text="Entry Approval"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_utility"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_below="@id/cv_notify"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Utility Payments"
+                        android:textColor="#3A3D3F"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_36sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_pay_gas_bill"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_gas_icon"
+                            android:drawablePadding="10dp"
+                            android:text="Pay Gas Bill"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btn_dth"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_dth_icon"
+                            android:drawablePadding="10dp"
+                            android:text="DTH"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+
+                        <Button
+                            android:id="@+id/btn_broadband"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_broadband_icon"
+                            android:text="Broadband"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_below="@id/cv_utility"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Book Facility"
+                        android:textColor="#3A3D3F"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_my_bookings"
+                        android:layout_width="126dp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_160sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_gas_icon"
+                        android:drawablePadding="10dp"
+                        android:text="My bookings"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_36sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_community_hall"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_hall"
+                            android:drawablePadding="10dp"
+                            android:text="Community Hall"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btn_swim_book"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_swim"
+                            android:drawablePadding="10dp"
+                            android:text="Swimming Pool"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+
+                        <Button
+                            android:id="@+id/btn_gym"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_gym_icon"
+                            android:drawablePadding="10dp"
+                            android:text="Gymnasium"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/_6sdp"-->
+                    <!--                        android:layout_marginEnd="@dimen/_6sdp"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:text="This place can be utilised for placing Ads and society notification"-->
+                    <!--                        android:textColor="#3A3D3F"-->
+                    <!--                        android:layout_marginTop="@dimen/_30sdp"-->
+                    <!--                        android:textSize="@dimen/_14sdp"/>-->
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

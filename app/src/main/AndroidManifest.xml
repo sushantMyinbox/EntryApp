@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mim.entryapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EntryApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.CallingActivity"></activity>
+        <activity android:name=".Activities.SwimActivity" />
+        <activity android:name=".Activities.GymActivity" />
+        <activity android:name=".Activities.NotificationActivity" />
+        <activity android:name=".Activities.MyBookingsActivity" />
+        <activity android:name=".Activities.Hall_Book_statusActivity" />
+        <activity android:name=".Activities.ResidentListActivity" />
+        <activity android:name=".Activities.CommunityHallActivity" />
+        <activity android:name=".Activities.ComplaintActivity" />
+        <activity android:name=".Activities.Email_loginActivity" />
+        <activity android:name=".Activities.SocietyDataActivity" />
+        <activity android:name=".Activities.AdminTabActivity" />
+        <activity android:name=".Activities.VisitorHistoryActivity" />
+        <activity android:name=".Activities.AddFamilyActivity" />
+        <activity android:name=".Activities.AddVisitorActivity" />
+        <activity
+            android:name=".Activities.ParkingMapActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.PayGasActivity" />
+        <activity android:name=".Activities.SearchCityActivity" />
+        <activity android:name=".Activities.HomeAddressActivity" />
+        <activity
+            android:name=".Activities.AddHomeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".HomeScreenActivity"
+            android:label="@string/title_activity_home_screen" />
+        <activity android:name=".Activities.DummyActivity" />
+        <activity android:name=".Activities.CongratulationActivity" />
+        <activity android:name=".Activities.OtpActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

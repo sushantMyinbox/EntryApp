@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_full_name"
+            android:text="Full Name"
+            android:textColor="#727171"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_name"
+            android:layout_below="@id/tv_full_name"
+            android:text="Rohan"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_call_icon"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_mob"
+            android:text="Mobile Number"
+            android:textColor="#727171"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_mob_no"
+            android:layout_below="@id/tv_mob"
+            android:text="9999999999"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_pin"
+            android:drawablePadding="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_coming"
+            android:layout_below="@id/tv_name"
+            android:text="Coming From"
+            android:textColor="#727171"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_location"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_coming"
+            android:text="Noida Sector 12"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_pin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_vehicleReg"
+            android:layout_below="@id/tv_mob_no"
+            android:text="Vehicle Number"
+            android:textColor="#727171"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_vehicle_reg_no"
+            android:layout_below="@id/tv_vehicleReg"
+            android:text="HR51AC0007"
+            android:textColor="@color/black"/>
+
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_adult_icon"
+            android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_below="@+id/tv_location"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_accompany"
+            android:text="Accompanied By"
+            android:textColor="#727171"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_adult"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_accompany"
+            android:text="1 Adult/0 child"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

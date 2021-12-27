@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_96sdp"
+                    android:background="#516395">
+
+                    <ImageButton
+                        android:id="@+id/backBtn"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="30dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_back_btn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Visitor"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:id="@+id/iv_history"
+                        android:layout_marginStart="@dimen/_116sdp"
+                        android:src="@drawable/ic_history"/>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_44sdp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cv_social"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Add Home"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginStart="@dimen/_20sdp"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:textSize="@dimen/_14sdp"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/relativeLayout1"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Full Name">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:drawableStart="@drawable/ic_owner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:inputType="textEmailAddress"
+                                    android:id="@+id/et_visitor_name"
+                                    />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/bg_mobile"-->
+<!--                                android:padding="@dimen/_12sdp"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_16sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:src="@drawable/ic_owner"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_26sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_4sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:src="@drawable/ic_divider"/>-->
+
+<!--                                <EditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:maxLines="1"-->
+<!--                                    android:maxLength="20"-->
+<!--                                    android:inputType="textCapWords"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:id="@+id/et_visitor_name"-->
+<!--                                    android:background="@drawable/bg_mobile"-->
+<!--                                    android:hint="Full Name"-->
+<!--                                    android:textColor="@color/black"/>-->
+
+<!--                            </LinearLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Mobile Number">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLength="10"
+                                    android:drawableStart="@drawable/ic_call_icon"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:inputType="number"
+                                    android:id="@+id/et_visitor_mobile" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:visibility="visible"-->
+<!--                                android:background="@drawable/bg_mobile"-->
+<!--                                android:padding="@dimen/_12sdp"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_16sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:src="@drawable/ic_call_icon"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_26sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_4sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:src="@drawable/ic_divider"/>-->
+
+<!--                                <EditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:inputType="number"-->
+<!--                                    android:maxLength="10"-->
+<!--                                    android:maxLines="1"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:id="@+id/et_mobile_num"-->
+<!--                                    android:background="@drawable/bg_mobile"-->
+<!--                                    android:hint="Mobile Number"-->
+<!--                                    android:textColor="@color/black"/>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/bg_mobile"-->
+<!--                                android:visibility="visible"-->
+<!--                                android:padding="@dimen/_12sdp"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_16sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:src="@drawable/ic_location"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_26sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_4sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:src="@drawable/ic_divider"/>-->
+
+<!--                                <EditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:inputType="textPersonName"-->
+<!--                                    android:maxLines="1"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:id="@+id/et_coming_from"-->
+<!--                                    android:background="@drawable/bg_mobile"-->
+<!--                                    android:hint="Coming From"-->
+<!--                                    android:textColor="@color/black"/>-->
+
+<!--                            </LinearLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_marginTop="@dimen/_12sdp"
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Visitor expected date">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableStart="@drawable/ic_person"
+                                    android:id="@+id/et_expected_date" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_marginTop="@dimen/_12sdp"
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Visitor expected time">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableStart="@drawable/ic_person"
+                                    android:id="@+id/et_expected_time" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Coming From">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:drawableStart="@drawable/ic_location"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:inputType="textEmailAddress"
+                                    android:id="@+id/et_coming_from" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    app:boxCornerRadiusBottomEnd="8dp"
+                                    app:boxCornerRadiusTopEnd="8dp"
+                                    app:boxCornerRadiusBottomStart="8dp"
+                                    app:boxCornerRadiusTopStart="8dp"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    app:boxBackgroundColor="@color/white"
+                                    android:layout_width="@dimen/_110sdp"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Adult">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLength="1"
+                                        android:drawableStart="@drawable/ic_adult_icon"
+                                        android:drawablePadding="@dimen/_10sdp"
+                                        android:inputType="number"
+                                        android:id="@+id/et_adult" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    app:boxCornerRadiusBottomEnd="8dp"
+                                    app:boxCornerRadiusTopEnd="8dp"
+                                    app:boxCornerRadiusBottomStart="8dp"
+                                    app:boxCornerRadiusTopStart="8dp"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    app:boxBackgroundColor="@color/white"
+                                    android:layout_width="@dimen/_110sdp"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Child">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLength="1"
+                                        android:drawableStart="@drawable/ic_adult_icon"
+                                        android:drawablePadding="@dimen/_10sdp"
+                                        android:inputType="number"
+                                        android:id="@+id/et_child"
+                                        />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="@dimen/_150sdp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                                    android:padding="@dimen/_12sdp"-->
+<!--                                    android:background="@drawable/bg_mob1"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="@dimen/_16sdp"-->
+<!--                                        android:layout_height="@dimen/_16sdp"-->
+<!--                                        android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                        android:src="@drawable/ic_adult_icon"/>-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="@dimen/_16sdp"-->
+<!--                                        android:layout_height="@dimen/_16sdp"-->
+<!--                                        android:layout_marginStart="@dimen/_4sdp"-->
+<!--                                        android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                        android:src="@drawable/ic_divider"/>-->
+
+<!--                                    <EditText-->
+<!--                                        android:layout_width="@dimen/_90sdp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:maxLength="1"-->
+<!--                                        android:maxLines="1"-->
+<!--                                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                        android:inputType="number"-->
+<!--                                        android:id="@+id/et_adult"-->
+<!--                                        android:background="@drawable/bg_mobile"-->
+<!--                                        android:hint="Adult" />-->
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="@dimen/_150sdp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginStart="@dimen/_100sdp"-->
+<!--                                    android:padding="@dimen/_12sdp"-->
+<!--                                    android:background="@drawable/bg_mobile"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="@dimen/_16sdp"-->
+<!--                                        android:layout_height="@dimen/_16sdp"-->
+<!--                                        android:layout_marginStart="@dimen/_24sdp"-->
+<!--                                        android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                        android:src="@drawable/ic_divider"/>-->
+
+<!--                                    <EditText-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:maxLength="1"-->
+<!--                                        android:maxLines="1"-->
+<!--                                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                        android:drawablePadding="@dimen/_10sdp"-->
+<!--                                        android:inputType="number"-->
+<!--                                        android:id="@+id/et_child"-->
+<!--                                        android:background="@drawable/bg_mobile"-->
+<!--                                        android:hint="Child" />-->
+
+<!--                                </LinearLayout>-->
+
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                app:boxCornerRadiusBottomEnd="8dp"
+                                app:boxCornerRadiusTopEnd="8dp"
+                                app:boxCornerRadiusBottomStart="8dp"
+                                app:boxCornerRadiusTopStart="8dp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Add Vehicle (Optional)">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:drawableStart="@drawable/ic_car"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:inputType="textEmailAddress"
+                                    android:id="@+id/et_vehicle" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:visibility="visible"-->
+<!--                                android:background="@drawable/bg_mobile"-->
+<!--                                android:padding="@dimen/_12sdp"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:layout_marginTop="@dimen/_20sdp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_16sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:src="@drawable/ic_call_icon"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="@dimen/_16sdp"-->
+<!--                                    android:layout_height="@dimen/_26sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_4sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:src="@drawable/ic_divider"/>-->
+
+<!--                                <EditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:inputType="textPersonName"-->
+<!--                                    android:maxLines="1"-->
+<!--                                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:id="@+id/et_vehicle"-->
+<!--                                    android:background="@drawable/bg_mobile"-->
+<!--                                    android:hint="Add Vehicle (Optional)"-->
+<!--                                    android:textColor="@color/black"/>-->
+
+<!--                            </LinearLayout>-->
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_add_visitor"
+                                android:layout_width="match_parent"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/_14sdp"
+                                android:layout_marginEnd="@dimen/_14sdp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/round_btn"
+                                android:text="Add Visitor"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

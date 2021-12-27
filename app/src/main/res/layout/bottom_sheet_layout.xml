@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:gravity="center_horizontal"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Conditions"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/algo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An Intellectual Property clause will inform users that the contents, logo and other visual media you created is your property and is protected by copyright laws.
+A Termination clause will inform users that any accounts on your website and mobile app, or users' access to your website and app, can be terminated in case of abuses or at your sole discretion.
+A Governing Law clause will inform users which laws govern the agreement. These laws should come from the country in which your company is headquartered or the country from which you operate your website and mobile app." />
+
+<!--    <Button-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:id="@+id/course_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Share this Course" />-->
+
+</LinearLayout>

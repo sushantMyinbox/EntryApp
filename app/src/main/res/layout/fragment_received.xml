@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_enter_amt"
+                        android:background="@drawable/bg_mobile"
+                        android:padding="@dimen/_12sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_26sdp"
+                            android:visibility="gone"
+                            android:src="@drawable/ava"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:id="@+id/ll_1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_name"
+                                    android:text="Name"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_a"
+                                    android:layout_marginStart="@dimen/_32sdp"
+                                    android:text=":"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_Req_name"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:text="Varun Malik"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_below="@+id/ll_1"
+                                android:id="@+id/ll_2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_sex"
+                                    android:text="Gender"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_b"
+                                    android:layout_marginStart="@dimen/_26sdp"
+                                    android:text=":"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_sex1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:text="Male"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ll_3"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_below="@+id/ll_2"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_phone"
+                                    android:text="Phone No."
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_c"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:text=":"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_phone_no"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:text="8909897689"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ll_3"
+                                android:id="@+id/ll_4"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_age"
+                                    android:text="Age"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_d"
+                                    android:layout_marginStart="@dimen/_44sdp"
+                                    android:text=":"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_age_no"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:text="26 Years"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_2sdp"
+                                android:id="@+id/view"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:background="@color/white"
+                                android:layout_below="@+id/ll_4"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/black"
+                                android:text="B-232, 7th Floor, Amarpail, Sector 62, Noida"
+                                android:id="@+id/tv_address"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_below="@id/view"
+                                />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:layout_centerInParent="true"
+                                android:textColor="#819BAA"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:id="@+id/btn_view_doc"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:text="View Document"
+                                android:layout_below="@id/tv_address"
+                                android:textAllCaps="false"
+                                android:textSize="12sp"
+                                app:strokeColor="#819BAA"
+                                app:strokeWidth="2dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:textColor="#45a247"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:id="@+id/btn_approve"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:text="Approve"
+                                android:layout_below="@id/btn_view_doc"
+                                android:textAllCaps="false"
+                                android:textSize="12sp"
+                                app:cornerRadius="@dimen/_14sdp"
+                                app:strokeColor="#45a247"
+                                app:strokeWidth="2dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cornerRadius="@dimen/_14sdp"
+                                android:backgroundTint="@color/white"
+                                android:id="@+id/btn_reject"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:textColor="#E84F35"
+                                android:layout_toRightOf="@id/btn_approve"
+                                android:layout_below="@id/btn_view_doc"
+                                android:layout_marginStart="@dimen/_30sdp"
+                                android:text="Reject"
+                                android:textAllCaps="false"
+                                android:textSize="12sp"
+                                app:strokeColor="#E84F35"
+                                app:strokeWidth="2dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

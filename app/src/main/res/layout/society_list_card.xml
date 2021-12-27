@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    app:cardBackgroundColor="#f1f6fb"
+    android:layout_marginTop="@dimen/_20sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/rl_1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#313131"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow"
+                android:textSize="@dimen/_12sdp"
+                android:text="Owner Name"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtArrow"
+                android:textSize="12sp"
+                android:textColor="#313131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/tv_owner_name"
+                android:textColor="#313131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:lines="1"
+                android:layout_toEndOf="@id/txtArrow"
+                android:text="Vivek Malik"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_2"
+            android:layout_below="@id/rl_1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow1"
+                android:textColor="#313131"
+                android:textSize="@dimen/_12sdp"
+                android:text="Mobile Number"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txtArrow1"
+                android:textSize="12sp"
+                android:textColor="#313131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#313131"
+                android:id="@+id/tv_mob_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:lines="1"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/txtArrow1"
+                android:text="9999990707"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_3"
+            android:layout_below="@id/rl_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow2"
+                android:textColor="#313131"
+                android:textSize="@dimen/_12sdp"
+                android:text="Email Id"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtArrow2"
+                android:textColor="#313131"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#313131"
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:lines="3"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/txtArrow2"
+                android:text="Vivek@gmail.com"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_4"
+            android:layout_below="@id/rl_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow3"
+                android:textColor="#313131"
+                android:textSize="@dimen/_12sdp"
+                android:text="Aadhar Number"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtArrow3"
+                android:textColor="#313131"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_aadhar_num"
+                android:textColor="#313131"
+                android:layout_marginStart="6dp"
+                android:lines="2"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/txtArrow3"
+                android:text=" 6565 9090 0203 0009"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_5"
+            android:layout_below="@id/rl_4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow4"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#313131"
+                android:text="Voter Id No"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtArrow4"
+                android:textColor="#313131"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#313131"
+                android:id="@+id/tv_voter_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:lines="1"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/txtArrow4"
+                android:text="XPHJ0973"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_6"
+            android:layout_below="@id/rl_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#313131"
+                android:lines="1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/txtArrow5"
+                android:textSize="@dimen/_12sdp"
+                android:text="Flat Address"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtArrow5"
+                android:textColor="#313131"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:text=":"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#313131"
+                android:id="@+id/tv_flat_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:lines="5"
+                android:layout_toEndOf="@id/txtArrow5"
+                android:text="DLF Capital Flat No - 225, Tower - B, Sec 125, Noida , Pin-201301" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

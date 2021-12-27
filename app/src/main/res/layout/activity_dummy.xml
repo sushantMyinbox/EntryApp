@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#F1F5F9"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_96sdp"
+                    android:background="#516395">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:text="Hi,"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:text="Sushant"
+                        android:id="@+id/tv_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/ava"
+                        android:layout_marginStart="@dimen/_110sdp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_setting"
+                        android:layout_marginStart="@dimen/_140sdp"
+                        android:src="@drawable/ic_menu_icon" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_44sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personal"
+                        android:textStyle="bold"
+                        android:textColor="#3A3D3F"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_70sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relativeLayout1"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_96sdp">
+
+                            <Button
+                                android:id="@+id/btn_add_home"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:text="Add Home"
+                                android:textAllCaps="false"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_home_icon" />
+
+                            <Button
+                                android:id="@+id/btn_add_family"
+                                android:text="Add Family"
+                                android:textSize="12sp"
+                                android:textAllCaps="false"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_home"
+                                android:drawableTop="@drawable/ic_people" />
+
+                            <Button
+                                android:id="@+id/btn_add_guest"
+                                android:text="Add Visitor"
+                                android:textSize="12sp"
+                                android:textAllCaps="false"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:layout_width="76dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_family"
+                                android:drawableTop="@drawable/ic_add_guest_icon" />
+
+                            <Button
+                                android:id="@+id/btn_add_vehicle"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_toEndOf="@id/btn_add_guest"
+                                android:textColor="@color/black"
+                                android:text="Add Vehicle"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_vehicle_icon" />
+
+                            <Button
+                                android:id="@+id/btn_add_friend"
+                                android:text="Add Friend"
+                                android:visibility="gone"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_vehicle"
+                                android:drawableTop="@drawable/ic_friend" />
+
+                            <Button
+                                android:id="@+id/btn_help"
+                                android:text="Add Help"
+                                android:visibility="gone"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_add_friend"
+                                android:drawableTop="@drawable/ic_help" />
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notify Gate"
+                        android:textStyle="bold"
+                        android:textColor="#3A3D3F"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_168sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relativeLayout3"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_196sdp">
+
+                            <Button
+                                android:id="@+id/btn_entry"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:text="Add Entries"
+                                android:textAllCaps="false"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_friend" />
+
+                            <Button
+                                android:id="@+id/btn_security"
+                                android:text="Security Alert"
+                                android:layout_toEndOf="@id/btn_entry"
+                                android:textAllCaps="false"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="10dp"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_security_icon" />
+
+
+                            <Button
+                                android:id="@+id/btn_message"
+                                android:text="Message to Guard"
+                                android:textSize="12sp"
+                                android:layout_toEndOf="@id/btn_security"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTop="@drawable/ic_message" />
+
+                            <Button
+                                android:id="@+id/btn_gatePass"
+                                android:layout_toEndOf="@id/btn_message"
+                                android:textSize="12sp"
+                                android:layout_width="94dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="Issue GatePass"
+                                android:textAllCaps="false"
+                                android:drawablePadding="10dp"
+                                android:background="@android:color/transparent"
+                                android:drawableTop="@drawable/ic_add_guest_icon" />
+
+                            <Button
+                                android:id="@+id/btn_approval"
+                                android:text="Entry Approval"
+                                android:textSize="12sp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="10dp"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/btn_gatePass"
+                                android:drawableTop="@drawable/ic_approval_icon" />
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:id="@+id/cv_utility"
+                    android:visibility="gone"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Utility Payments"
+                        android:textStyle="bold"
+                        android:textColor="#3A3D3F"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/relativeLayout4"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_36sdp">
+
+                        <Button
+                            android:id="@+id/btn_pay_gas_bill"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:textColor="@color/black"
+                            android:text="Pay Gas Bill"
+                            android:textAllCaps="false"
+                            android:drawablePadding="10dp"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_gas_icon" />
+
+                        <Button
+                            android:id="@+id/btn_dth"
+                            android:text="DTH"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:drawablePadding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:drawableTop="@drawable/ic_dth_icon" />
+
+
+                        <Button
+                            android:id="@+id/btn_broadband"
+                            android:text="Broadband"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:drawableTop="@drawable/ic_broadband_icon" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:visibility="gone"
+                    android:id="@+id/cv_ads"
+                    android:layout_below="@id/cv_utility"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:gravity="center"
+                        android:text="This place can be utilised for placing Ads and society notification"
+
+                        android:textColor="#3A3D3F"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

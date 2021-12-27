@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/iv_close"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_close__icon"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:id="@+id/iv_avatar"
+            android:src="@drawable/ava"
+            android:layout_marginStart="@dimen/_130sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_avatar"
+            android:layout_centerHorizontal="true"
+            android:textColor="#516395"
+            android:text="Sushant"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_220sdp"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="#3A3D3F"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:textSize="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                app:drawableStartCompat="@drawable/ic_society" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_notify"
+            android:text="Orders &amp; Bookings"
+            android:textColor="#3A3D3F"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                app:drawableStartCompat="@drawable/ic_notify"
+                android:text="Help &amp; Support"
+                android:textColor="#3A3D3F"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                app:drawableStartCompat="@drawable/ic_payments"
+                android:textColor="#3A3D3F"
+                android:text="About Us"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rateUs"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_14sdp"
+                app:drawableStartCompat="@drawable/ic_support"
+                android:textColor="#3A3D3F"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Rate Us"
+                android:textSize="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_shareApp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_14sdp"
+                app:drawableStartCompat="@drawable/ic_share"
+                android:textColor="#3A3D3F"
+                android:text="Application Share"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_logout"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_14sdp"
+                app:drawableStartCompat="@drawable/ic_logout"
+                android:textColor="#3A3D3F"
+                android:text="Logout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

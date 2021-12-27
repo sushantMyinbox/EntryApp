@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F1F5F9"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.SocietyDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_86sdp"
+            android:background="#E84F35">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:text="Society Data"
+                android:id="@+id/tv_admin_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:id="@+id/cv_data"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File Upload"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/dotted_box"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_upload_doc"
+                    android:text="Upload Society Document"
+                    android:drawablePadding="@dimen/_4sdp"
+                    app:drawableTopCompat="@drawable/ic_upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".xls/ .csv"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:id="@+id/upload_icon"
+                    android:src="@drawable/ic_xls"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Society-Data.xls"
+                    android:id="@+id/tv_rent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/upload_icon"/>
+
+                <ProgressBar
+                    android:id="@+id/determinateBar"
+                    android:layout_below="@id/tv_rent"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/upload_icon"
+                    android:layout_width="@dimen/_162sdp"
+                    android:layout_height="@dimen/_6sdp"
+                    android:progressDrawable="@drawable/custom_progress_green"
+                    android:progress="100"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_rent"
+                    android:layout_toEndOf="@id/determinateBar"
+                    android:src="@drawable/ic_check"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_progress"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_below="@id/determinateBar"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toEndOf="@id/upload_icon"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Upload Complete" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:id="@+id/upload_icon1"
+                    android:src="@drawable/ic_csv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Society-data.csv"
+                    android:id="@+id/tv_aadhar"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/upload_icon1"/>
+
+                <ProgressBar
+                    android:id="@+id/determinateBar1"
+                    android:layout_below="@id/tv_aadhar"
+                    android:background="@android:color/holo_green_light"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/upload_icon1"
+                    android:layout_width="@dimen/_162sdp"
+                    android:layout_height="@dimen/_6sdp"
+                    android:progressDrawable="@drawable/custom_progress_green"
+                    android:progress="100"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_aadhar"
+                    android:layout_toEndOf="@id/determinateBar1"
+                    android:src="@drawable/ic_check"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@id/determinateBar1"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toEndOf="@id/upload_icon1"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:text="Upload Complete" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit_doc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/round_btn"
+                android:text="Submit Document"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_data"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:id="@+id/cv_society_list"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Society List"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:id="@+id/iv_options"
+                android:src="@drawable/menu"
+                android:layout_alignParentEnd="true"
+                android:onClick="showOptions"/>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipToPadding="false"
+              android:layout_marginBottom="@dimen/_14sdp"
+              android:layout_marginStart="@dimen/_20sdp"
+              android:layout_marginEnd="@dimen/_20sdp"
+              android:id="@+id/recyclerView_society_list"
+              android:layout_marginTop="@dimen/_36sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

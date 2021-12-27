@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dialog_box_imageView"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/person_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_box_date"
+        android:text="21 Oct,2021"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_box_time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:text="11.30 PM"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/dialog_box_imageView"
+        android:layout_centerInParent="true"
+        android:id="@+id/dialog_box_message"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Message" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_box_message"
+        android:padding="19dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sollicitudin magna, vitae dictum quam. Phasellus ut commodo leo, iaculis maximus odio.commodo leo, iaculis."
+        android:id="@+id/dialog_box_user_desc"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textAlignment="center"/>
+</RelativeLayout>
